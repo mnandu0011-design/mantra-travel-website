@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Basic SEO Requirements -->
+    <title>Book Your Tour Online | Mantra Travels</title>
+    <meta name="description" content="Secure your dream vacation package. Fill out our online tour booking form to schedule your next trip with Mantra Travels.">
+    <meta name="keywords" content="book tour online, travel booking form, vacation registration, Mantra travels booking">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Ensures the booking form container stays centered, responsive, and readable */
+        .form-container {
+            max-width: 600px;
+            margin: 2rem auto;
+            padding: 2.5rem;
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+        }
+        .form-group {
+            margin-bottom: 1.5rem;
+            text-align: left;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: #333;
+        }
+        .form-control {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1rem;
+            box-sizing: border-box;
+        }
+        .form-control:focus {
+            border-color: #e76f51;
+            outline: none;
+            box-shadow: 0 0 5px rgba(231, 111, 81, 0.2);
+        }
+        .btn-submit {
+            background-color: #e76f51;
+            color: white;
+            padding: 0.75rem 2rem;
+            border: none;
+            border-radius: 4px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            width: 100%;
+            transition: background 0.2s ease;
+        }
+        .btn-submit:hover {
+            background-color: #f4a261;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Shared Header Layout -->
+    <header>
+        <div class="navbar container">
+            <div class="logo">Mantra<span>Travels</span></div>
+            <nav>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="destinations.html">Destinations</a></li>
+                    <li><a href="packages.html">Packages</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="booking.html" class="active">Booking</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle" id="mobileMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Section -->
+    <main class="container section">
+        <h1 class="text-center">Tour Booking Form</h1>
+        <p class="subtitle text-center">Plan your escape. Fill out the fields below and our agents will process your request.</p>
+
+        <!-- Centered Interactive Form Box -->
+        <div class="form-container">
+            <form action="#" method="POST">
+                
+                <!-- Full Name -->
+                <div class="form-group">
+                    <label for="fullName">Full Name</label>
+                    <input type="text" id="fullName" class="form-control" placeholder="Enter your full name" required>
+                </div>
+
+                <!-- Email Address -->
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" class="form-control" placeholder="example@domain.com" required>
+                </div>
+
+                <!-- Destination Selector -->
+                <div class="form-group">
+                    <label for="destination">Select Destination</label>
+                    <select id="destination" class="form-control" required>
+                        <option value="" disabled selected>-- Choose an option --</option>
+                        <option value="jaipur">Jaipur, Rajasthan</option>
+                        <option value="kerala">Munnar, Kerala</option>
+                        <option value="goa">North Goa Beaches</option>
+                        <option value="shimla">Shimla, Himachal</option>
+                    </select>
+                </div>
+
+                <!-- Travel Date -->
+                <div class="form-group">
+                    <label for="travelDate">Travel Date</label>
+                    <input type="date" id="travelDate" class="form-control" required>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="btn-submit">Submit Booking Request</button>
+            </form>
+        </div>
+    </main>
+
+    <!-- Shared Footer Layout -->
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2026 Mantra Summer School Project. Designed for Frontend Assignment 1.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
