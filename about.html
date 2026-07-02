@@ -1,143 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Mantra Travels</title>
+    <meta name="description" content="Meet the passionate travel experts behind Mantra Travels. Learn about our mission to create unforgettable custom itineraries.">
+    <meta name="keywords" content="about travel agency, travel experts, Mantra Travels team">
+    
+    <style>
+        /* Global & Reset Layouts */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            box-sizing: border-box;
+        }
+        .section {
+            padding: 4rem 0;
+        }
+        .text-center {
+            text-align: center;
+        }
+        h1 {
+            font-size: 2.5rem;
+            color: #182b33;
+            margin-bottom: 0.5rem;
+        }
+        .subtitle {
+            font-size: 1.1rem;
+            color: #666;
+            margin-bottom: 3rem;
+        }
 
-    <title>About Us | Mantra Travel</title>
+        /* Shared Header/Navbar Layout */
+        header {
+            background-color: #182b33;
+            padding: 1rem 0;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            color: #fff;
+            font-size: 1.5rem;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+        .logo span {
+            color: #4ea8de;
+        }
+        .nav-links {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            gap: 1.5rem;
+        }
+        .nav-links a {
+            color: #ccc;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: 500;
+            transition: color 0.2s ease;
+        }
+        .nav-links a:hover, .nav-links a.active {
+            color: #fff;
+            border-bottom: 2px solid #4ea8de;
+            padding-bottom: 4px;
+        }
 
-    <meta name="description"
-        content="Learn about Mantra Travel, our mission, vision, and commitment to providing unforgettable travel experiences across India.">
+        /* Team Section Layout Grid */
+        .team-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2.5rem;
+            margin-top: 2rem;
+        }
+        .team-card {
+            flex: 1 1 300px;
+            max-width: 350px;
+            background: #ffffff;
+            padding: 2.5rem 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            text-align: center;
+            box-sizing: border-box;
+            border-top: 4px solid #4ea8de;
+        }
 
-    <meta name="keywords"
-        content="Mantra Travel, About, Tourism, Travel Agency, India Tours">
+        /* Initials Badge Box replacing the image element */
+        .initials-badge {
+            width: 90px;
+            height: 90px;
+            background-color: #e0f2fe;
+            color: #0077b6;
+            font-size: 2rem;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            margin: 0 auto 1.5rem auto;
+            letter-spacing: 1px;
+            box-shadow: inset 0 0 0 2px #0096c7;
+        }
 
-    <link rel="stylesheet" href="css/style.css">
+        .team-card h3 {
+            font-size: 1.5rem;
+            color: #182b33;
+            margin: 0 0 0.4rem 0;
+        }
+        .team-role {
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: #0096c7;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 1rem;
+        }
+        .team-desc {
+            color: #666;
+            line-height: 1.6;
+            font-size: 0.95rem;
+            margin: 0;
+        }
+
+        /* Universal Footer Layout */
+        footer {
+            background-color: #182b33;
+            color: #ccc;
+            padding: 1.5rem 0;
+            margin-top: 4rem;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+    </style>
 </head>
-
 <body>
 
+    <!-- Shared Header Layout -->
     <header>
-
-        <div class="logo">
-            <h2>🌍 Mantra Travel</h2>
+        <div class="navbar container">
+            <div class="logo">Mantra<span>Travels</span></div>
+            <nav>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="destinations.html">Destinations</a></li>
+                    <li><a href="packages.html">Packages</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="booking.html">Booking</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html" class="active">About</a></li>
-                <li><a href="packages.html">Packages</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-
     </header>
 
-    <section class="page-banner">
+    <!-- Main Content Section -->
+    <main class="container section">
+        <h1 class="text-center">Meet Our Travel Experts</h1>
+        <p class="subtitle text-center">Our dedicated team works around the clock to build your perfect custom itineraries.</p>
 
-        <h1>About Mantra Travel</h1>
-
-        <p>Your trusted travel partner for unforgettable journeys.</p>
-
-    </section>
-
-    <section class="about">
-
-        <div class="about-content">
-
-            <h2>Who We Are</h2>
-
-            <p>
-                Mantra Travel is a leading travel agency dedicated to helping
-                people explore the beauty of India. We provide carefully planned
-                holiday packages that combine comfort, adventure, and affordability.
-            </p>
-
-            <p>
-                Our experienced team ensures every trip is enjoyable, safe,
-                and memorable for families, students, couples, and corporate groups.
-            </p>
-
-        </div>
-
-    </section>
-
-    <section class="mission">
-
-        <div class="cards">
-
-            <div class="card">
-
-                <h3>🎯 Our Mission</h3>
-
-                <p>
-                    To make travel affordable, safe, and enjoyable while
-                    creating unforgettable memories for every traveler.
-                </p>
-
+        <!-- Image-Free Team Row Grid -->
+        <div class="team-grid">
+            
+            <!-- Expert 1 Card -->
+            <div class="team-card">
+                <div class="initials-badge">JS</div>
+                <h3>Arjun Sharma</h3>
+                <div class="team-role">Chief Executive Explorer</div>
+                <p class="team-desc">Over 12 years mapping custom travel itineraries across Southeast Asia and remote regional corridors.</p>
             </div>
 
-            <div class="card">
-
-                <h3>👁 Our Vision</h3>
-
-                <p>
-                    To become India's most trusted travel company by
-                    delivering world-class tourism experiences.
-                </p>
-
+            <!-- Expert 2 Card -->
+            <div class="team-card">
+                <div class="initials-badge">PP</div>
+                <h3>Priya Patel</h3>
+                <div class="team-role">Lead Destination Strategist</div>
+                <p class="team-desc">Specializes in building authentic regional culinary, historic landmark, and fine arts itineraries.</p>
             </div>
 
-            <div class="card">
-
-                <h3>⭐ Our Values</h3>
-
-                <p>
-                    Customer satisfaction, honesty, safety,
-                    quality service, and responsible tourism.
-                </p>
-
+            <!-- Expert 3 Card -->
+            <div class="team-card">
+                <div class="initials-badge">RD</div>
+                <h3>Rohan Das</h3>
+                <div class="team-role">24/7 Logistics Coordinator</div>
+                <p class="team-desc">Dedicated to ensuring complete guest comfort, local transport bookings, and emergency support.</p>
             </div>
 
         </div>
+    </main>
 
-    </section>
-
-    <section class="why-us">
-
-        <h2>Why Choose Mantra Travel?</h2>
-
-        <ul>
-
-            <li>✔ Affordable Tour Packages</li>
-
-            <li>✔ Experienced Travel Experts</li>
-
-            <li>✔ Comfortable Hotel Bookings</li>
-
-            <li>✔ Safe Transportation</li>
-
-            <li>✔ 24×7 Customer Support</li>
-
-            <li>✔ Thousands of Happy Travelers</li>
-
-        </ul>
-
-    </section>
-
+    <!-- Shared Footer Layout -->
     <footer>
-
-        <p>
-            © 2026 Mantra Travel. All Rights Reserved.
-        </p>
-
+        <div class="container">
+            <p>&copy; 2026 Mantra Summer School Project. Designed for Frontend Assignment 1.</p>
+        </div>
     </footer>
 
-    <script src="js/script.js"></script>
-
 </body>
-
 </html>
