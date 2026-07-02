@@ -317,3 +317,11 @@ footer {
     text-align: center;
     padding: 1.5rem;
 }
+
+footer {
+    background-color: #3b7197; /* This matches the dark blue color in the image */
+    color: white;              /* Sets the text color to white */
+    text-align: center;        /* Centers the text */
+    padding: 20px;             /* Adds space around the text */
+    margin-top: auto;          /* Pushes the footer to the bottom of the page */
+}
